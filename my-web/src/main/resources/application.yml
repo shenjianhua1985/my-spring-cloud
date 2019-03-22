@@ -1,2 +1,14 @@
+swagger:
+  enabled: true
+
 server:
   port: 6061
+  address: 0.0.0.0
+  compression.min-response-size: 1024
+  compression.enabled: true
+  compression.mime-types: text/plain application/x-javascript text/css application/xml text/javascript application/javascript application/json
+  use-forward-headers: true
+  tomcat.remote_ip_header: X-Forwarded-For
+  tomcat.protocol_header: X-Forwarded-Proto
+  servlet:
+    context-path: /my-web
