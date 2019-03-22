@@ -1,0 +1,10 @@
+server:
+  port: 6060
+zuul:
+  routes:
+    user:
+      path: /user/**
+      url: http://127.0.0.1:6061/service/user/
+    role:
+      path: /project/**
+      url: http://127.0.0.1:6061/service/project/
